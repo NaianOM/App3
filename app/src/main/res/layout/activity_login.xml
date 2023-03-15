@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_android"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/loginid"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="IniciarSesion"
+        android:text="@string/login"
+        android:textColor="@color/violetaneon"
+        app:layout_constraintBottom_toTopOf="@+id/forget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#6FC7FA" />
+
+    <Button
+        android:id="@+id/forget"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="OlvidarContra"
+        android:text="@string/forgotPassword"
+        android:textColor="@color/violetaneon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#6FC7FA" />
+
+    <Button
+        android:id="@+id/button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="Registrarse"
+        android:text="@string/register"
+        android:textColor="@color/violetaneon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forget"
+        app:strokeColor="#6FC7FA" />
+
+    <TextView
+        android:id="@+id/textViewISuserName"
+        android:layout_width="79dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/userName"
+        android:textColor="@color/azul_claro"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewISPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/Password"
+        android:textColor="@color/azul_claro"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/passwrdpas"
+        app:layout_constraintTop_toBottomOf="@+id/textViewISuserName" />
+
+    <EditText
+        android:id="@+id/passwrdpas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="43dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/writePassword"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/violetaneon"
+        android:textColorHint="@color/violetaneon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usserpas" />
+
+    <EditText
+        android:id="@+id/usserpas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="43dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/writeuserName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/violetaneon"
+        android:textColorHint="@color/violetaneon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditList"
+    android:background="@drawable/fondo_cp">
+
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRGender" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/textViewRName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nombre_usuario"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextELName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewRfirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/contrasena"
+        android:textColor="@color/azuld"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextELName" />
+
+    <TextView
+        android:id="@+id/textViewRGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/list_image"
+        android:textColor="@color/azuld"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextElPassword" />
+
+    <Button
+        android:id="@+id/loginid2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="110dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        android:onClick="Volver"
+        android:text="@string/back"
+        android:textColor="@color/azuld"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginid"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupEL"
+        app:strokeColor="@color/azuld"
+        app:strokeWidth="2dp" />
+
+    <EditText
+        android:id="@+id/editTextELName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/list_nameHint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/azuld"
+        android:textColorHint="@color/azuld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRName"
+        tools:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextElPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/list_passHint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/azuld"
+        android:textColorHint="@color/azuld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRfirstName"
+        tools:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEL"
+        android:layout_width="125dp"
+        android:layout_height="255dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRGender">
+
+        <RadioButton
+            android:id="@+id/radioButtonEL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_image1"
+            android:textColor="@color/azuld"
+            tools:textSize="12sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_image2"
+            android:textColor="@color/azuld"
+            tools:textSize="12sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_image3"
+            android:textColor="@color/azuld"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEL4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_image4"
+            android:textColor="@color/azuld"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/loginid"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="108dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="48dp"
+        android:onClick="Enviar"
+        android:text="@string/list_button"
+        android:textColor="@color/azuld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupEL"
+        app:strokeColor="@color/azuld"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupEL"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRGender"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupEL"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/user1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupEL"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/user2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupEL"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/user3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
